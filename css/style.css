@@ -1,74 +1,58 @@
-
-
+@charset "UTF-8";
 /* importacion de fuente desde google fonts */
-  @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
-  body {
-    font-family: 'Lilita One', cursive;
-  }
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+body {
+  font-family: "Lilita One", cursive;
+}
 
-/* HEADER */
+/*@import './base/reset';*/
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #dbbfdd;
-  }
-
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #dbbfdd;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+header nav ul li {
+  margin: 15px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #06b2b1;
+}
 header img {
   width: 15rem;
 }
 
-  header nav ul {
-    list-style: none;
-    display: flex;
-  }
-
-  header nav ul li {
-    margin: 15px;
-  }
-  
-  header nav ul li a {
-      text-decoration: none;
-      color: #06b2b1;
-  }
-/* FIN HEADER */
-
-/* CARDS DE TEXTO */
-.card-body{
+/* FOOTER */
+footer {
   background-color: #fff1cf;
 }
-.card-title{
+footer .footer-class {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer .footer-class a img {
+  width: 2rem;
+}
+
+/* CARDS DE TEXTO */
+.d-flex .card .card-body {
+  background-color: #fff1cf;
+}
+.d-flex .card .card-title {
   color: #ed6b6a;
 }
-  
-
-.producto-categorias{
-    color: coral;
-}
-
-
-  /*quienes somos, texto alineado a la izq e imagen a la derecha*/
-  .quienes-texto-imagen{
-    overflow: hidden;
-    background-color: #fff1cf;
-    text-align: justify;
-  }
-
-/* texto en quienes-somos.html */
-.texto-quienes{
-    color: #ed6b6a;
-    font-size: 180%;
-    float: left;
-  width: 50%;
-}
-
-.imagen-quienes{
-    float: right;
-  width: 50%;
+.d-flex .card .card-title:hover {
+  color: fuchsia;
 }
 
 /* estilo del título principal en catalogo.html */
-.catalogo-titulo{
+.catalogo-titulo {
   background-color: #fff1cf;
   color: #53bbaf;
   text-align: center;
@@ -76,78 +60,83 @@ header img {
 }
 
 /* estilo de los titulos secundarios en catalogo.html */
-.catalogo-categorias{
-  font-size: 100%;
-  color: #ed6b6a;
-  text-align: center;
-}
-
-
-/* estilo dl titulo principal en productos.html */
-.mas-buscados{
-  background-color: #fff1cf;
-  color: #53bbaf;
-  text-align: center;
-  font-size: 150%; 
-}
-
-
-/* estilo de los titulos secundarios en productos.html */
-.producto-categorias{
+.catalogo-categorias {
   font-size: 100%;
   color: #ed6b6a;
   text-align: center;
 }
 
 /* estilo del titulo principal en contacto.html */
-.contacto-titulo{
+.contacto-titulo {
   background-color: #fff1cf;
   color: #53bbaf;
   text-align: center;
-  font-size: 150%; 
+  font-size: 150%;
 }
 
 /* estilo de los datos en contacto.html */
-.contacto-info{
+.contacto-info {
   font-size: 100%;
   color: #ed6b6a;
   text-align: center;
 }
 
 /* estilo de las imagenes en contacto.html */
-.imagenes-info{
+.imagenes-info {
   text-align: center;
+  width: 100%;
 }
 
+.producto-categorias {
+  color: coral;
+}
 
-/* estilo del titulo principal en quienes-somos.html */
-.quienes-titulo{
+/* estilo dl titulo principal en productos.html */
+.mas-buscados {
   background-color: #fff1cf;
   color: #53bbaf;
   text-align: center;
-  font-size: 150%; 
+  font-size: 150%;
 }
 
+/* estilo de los titulos secundarios en productos.html */
+.producto-categorias {
+  font-size: 100%;
+  color: #ed6b6a;
+  text-align: center;
+}
 
-footer{
+/*quienes somos, texto alineado a la izq e imagen a la derecha*/
+.quienes-texto-imagen {
+  overflow: hidden;
   background-color: #fff1cf;
-}
-.footer-class{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  text-align: justify;
 }
 
-footer .footer-class a img {
-  width: 2rem;
+/* texto en quienes-somos.html */
+.texto-quienes {
+  color: #ed6b6a;
+  font-size: 180%;
+  float: left;
+  width: 50%;
 }
 
+.imagen-quienes {
+  float: right;
+  width: 50%;
+}
 
-.quienes{
+/* estilo del titulo principal en quienes-somos.html */
+.quienes-titulo {
+  background-color: #fff1cf;
+  color: #53bbaf;
+  text-align: center;
+  font-size: 150%;
+}
+
+.quienes {
   display: flex;
   margin: 2rem;
 }
 
-
-
-
+/*# sourceMappingURL=style.css.map */

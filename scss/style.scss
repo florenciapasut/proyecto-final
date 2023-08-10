@@ -1,0 +1,15 @@
+/* importacion de fuente desde google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+body {
+  font-family: 'Lilita One', cursive;
+}
+
+/*@import './base/reset';*/
+
+@import './layout/header';
+
+@import './layout/_cards-index';
+@import './layout/catalogo-class';
+@import './layout/contacto-class';
+@import './layout/productos-class';
+@import './layout/quienes-class';

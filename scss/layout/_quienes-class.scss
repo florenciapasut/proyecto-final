@@ -1,0 +1,34 @@
+/*quienes somos, texto alineado a la izq e imagen a la derecha*/
+.quienes-texto-imagen{
+    overflow: hidden;
+    background-color: #fff1cf;
+    text-align: justify;
+  
+  }
+  
+  /* texto en quienes-somos.html */
+  .texto-quienes{
+    color: #ed6b6a;
+    font-size: 180%;
+    float: left;
+  width: 50%;
+  }
+  
+  .imagen-quienes{
+    float: right;
+  width: 50%;
+  }
+  
+  /* estilo del titulo principal en quienes-somos.html */
+  .quienes-titulo{
+  background-color: #fff1cf;
+  color: #53bbaf;
+  text-align: center;
+  font-size: 150%; 
+  }
+  
+  
+  .quienes{
+  display: flex;
+  margin: 2rem;
+  }

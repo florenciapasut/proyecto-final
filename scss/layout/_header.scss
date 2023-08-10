@@ -1,0 +1,41 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #dbbfdd;
+
+        nav{
+            ul {
+                list-style: none;
+                display: flex;
+                    li {
+                     margin: 15px;
+                        a {
+                             text-decoration: none;
+                             color: #06b2b1;
+                        }
+                    }
+            }
+         }
+
+    img {
+        width: 15rem;
+    }
+  }
+
+
+
+  /* FOOTER */
+  footer{
+    background-color: #fff1cf;
+        .footer-class{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+                a{
+                    img{
+                        width: 2rem;
+                    }
+                }
+        }
+    }

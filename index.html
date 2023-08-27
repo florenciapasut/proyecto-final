@@ -10,18 +10,43 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- libreria animaciones-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- modificación al nav por defecto de bootstrap-->
+    <style>
+      .navbar {
+        --bs-navbar-padding-y: 0;
+      }
+    </style>
 </head>
 
 <header >
-     <img src="imagenes/logo-nav.png" alt="Logo">
-    <nav>
-        <ul>
-            <li><a href="html/productos.html">Productos</a></li>
-            <li><a href="html/catalogo.html">Catalogo de imagenes</a></li>
-            <li><a href="html/contacto.html">Contacto</a></li>
-            <li><a href="html/quienes-somos.html">Quienes somos</a></li>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <img class="navbar-brand" src="imagenes/logo-nav.png" alt="Logo">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"  aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> 
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="html/productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="html/catalogo.html">Catalogo de imagenes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="html/contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="html/quienes-somos.html">Quienes somos</a>
+          </li>
+          
         </ul>
-     </nav>   
+      </div>
+    </div>
+  </nav>
+   
 </header>
 
 <body>
@@ -30,15 +55,12 @@
     <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="imagenes/car1.jpg" class="d-block w-100" alt="carrousel1">
+            <img src="imagenes/banner1.png" class="d-block w-100" alt="carrousel1">
           </div>
           <div class="carousel-item">
-            <img src="imagenes/car2.jpg" class="d-block w-100" alt="carrousel2">
+            <img src="imagenes/banner2.png" class="d-block w-100" alt="carrousel2">
           </div>
-          <div class="carousel-item">
-            <img src="imagenes/car3.jpg" class="d-block w-100" alt="carrousel3">
-          </div>
-        </div>
+       </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>

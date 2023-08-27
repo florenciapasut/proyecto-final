@@ -12,16 +12,25 @@ header {
   justify-content: space-around;
   background-color: #dbbfdd;
 }
-header nav ul {
-  list-style: none;
-  display: flex;
+header nav {
+  /*ul {
+      list-style: none;
+      display: flex;
+          li {
+           margin: 15px;
+              a {
+                   text-decoration: none;
+                   color: #06b2b1;
+              }
+          } */
 }
-header nav ul li {
-  margin: 15px;
+header nav .navbar {
+  --bs-navbar-padding-y: 0rem;
 }
-header nav ul li a {
-  text-decoration: none;
-  color: #06b2b1;
+header nav .container-fluid {
+  background-color: #dbbfdd;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 header img {
   width: 15rem;
@@ -42,13 +51,13 @@ footer .footer-class a img {
 
 /* CARDS DE TEXTO */
 .d-flex .card .card-body {
-  background-color: #fff1cf;
+  background-color: #BCDFF6;
 }
 .d-flex .card .card-title {
-  color: #ed6b6a;
+  color: #A356D6;
 }
 .d-flex .card .card-title:hover {
-  color: fuchsia;
+  color: #FFCADC;
 }
 
 /* estilo del título principal en catalogo.html */
@@ -93,7 +102,7 @@ footer .footer-class a img {
 
 /* estilo dl titulo principal en productos.html */
 .mas-buscados {
-  background-color: #fff1cf;
+  background-color: #FFCADC;
   color: #53bbaf;
   text-align: center;
   font-size: 150%;

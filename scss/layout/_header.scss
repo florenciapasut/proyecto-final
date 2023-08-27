@@ -3,9 +3,21 @@ header{
     align-items: center;
     justify-content: space-around;
     background-color: #dbbfdd;
-
+    
         nav{
-            ul {
+            
+            .navbar{
+                --bs-navbar-padding-y: 0rem;
+            }
+
+            .container-fluid {
+             background-color: #dbbfdd;
+             margin-top: 0;
+             margin-bottom: 0;
+            }
+  
+            
+            /*ul {
                 list-style: none;
                 display: flex;
                     li {
@@ -14,14 +26,16 @@ header{
                              text-decoration: none;
                              color: #06b2b1;
                         }
-                    }
-            }
-         }
+                    } */
+         
+        }
+         
 
-    img {
-        width: 15rem;
-    }
-  }
+
+        img {
+            width: 15rem;
+        }
+}
 
 
 

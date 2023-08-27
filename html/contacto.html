@@ -8,18 +8,45 @@
     <!-- link a Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
+
+    <!-- modificación al nav por defecto de bootstrap-->
+    <style>
+        .navbar {
+          --bs-navbar-padding-y: 0;
+        }
+      </style>
 </head>
 
 <header>
-    <img src="../imagenes/logo-nav.png" alt="Logo">
-    <nav>
-       <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../html/catalogo.html">Catalogo de imagenes</a></li>
-            <li><a href="../html/productos.html">Productos</a></li>
-            <li><a href="../html/quienes-somos.html">Quienes somos</a></li>
-       </ul> 
-    </nav>   
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <img class="navbar-brand" src="../imagenes/logo-nav.png" alt="Logo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"  aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> 
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+             </li>  
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../html/catalogo.html">Catalogo de imagenes</a>
+              </li>
+             
+              <li class="nav-item">
+                <a class="nav-link" href="../html/productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/quienes-somos.html">Quienes somos</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
 </header>
 
 
@@ -62,4 +89,24 @@
     <!-- link a js-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
+
+<footer>
+
+    
+    <div class="footer-class">
+         
+        <a href="https://www.facebook.com/people/Remember/100063689302467/" target="_blank">
+            <img src="../imagenes/facebook.png" alt="facebook">
+        </a>
+    
+        <a href="https://www.instagram.com/remember.estampas/" target="_blank">
+            <img src="../imagenes/instagram.png" alt="instagram">
+        </a>
+        <a href="https://www.tiktok.com/discover/remember-estampas?lang=es" target="_blank">
+            <img src="../imagenes/tiktok.png" alt="tiktok">
+        </a>
+    </div>
+    
+    </footer>
+    
 </html>
